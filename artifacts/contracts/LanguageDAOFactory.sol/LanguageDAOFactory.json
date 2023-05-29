@@ -1,0 +1,357 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "allDataDaos",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "dataDaoOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "dataDaoName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "dataDaoDescription",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "dataDaoAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "dataDAOTokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalSupplly",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tokenPrice",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allDataDaosAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_dataDAOAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_description",
+        "type": "string"
+      },
+      {
+        "internalType": "contract IERC20",
+        "name": "_token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tokenPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_totalSupply",
+        "type": "uint256"
+      }
+    ],
+    "name": "createDataDao",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "dataDaoFactoryOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllDataDaos",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "dataDaoOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "dataDaoName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataDaoDescription",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "dataDaoAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "dataDAOTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupplly",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenPrice",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LanguageDAOFactory.dataDaoFactoryStruct[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getDataDaoInstance",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "dataDaoOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "dataDaoName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataDaoDescription",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "dataDaoAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "dataDAOTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupplly",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenPrice",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LanguageDAOFactory.dataDaoFactoryStruct",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_userAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getUserDataDaos",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "dataDaoOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "dataDaoName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "dataDaoDescription",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "dataDaoAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "dataDAOTokenAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "totalSupplly",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tokenPrice",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct LanguageDAOFactory.dataDaoFactoryStruct[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "numOfDataDao",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "searchByDaoId",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "userDataDAO",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]
